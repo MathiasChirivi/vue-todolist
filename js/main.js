@@ -9,13 +9,13 @@ createApp({
             taskList:[
                 {
                     text:"Programmare Usando Vue.js",
-                    done:"true"
+                    done: true,
                 },{
                     text:"Programmare Usando php",
-                    done:"false"
+                    done: false,
                 },{
                     text:"Creare un index.html e uno style.css",
-                    done:"false"
+                    done: false,
                 }
             ]
         }
