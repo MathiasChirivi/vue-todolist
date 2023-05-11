@@ -1,3 +1,8 @@
 .textTrue{
     text-decoration: line-through;
+    color: greenyellow;
+}
+
+.text{
+    color: red;
 }

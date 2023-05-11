@@ -21,9 +21,9 @@ createApp({
         }
     },
     methods:{
-        lineThrough(index){
-            return (this.taskList[index].done) ? 'textTrue' : '';
-        },
+        // lineThrough(index){
+        //     return (this.taskList[index].done) ? 'textTrue' : '';
+        // },
         addTask(){
             if(this.newTask.length >= 2){
                 this.inputError = false;
@@ -44,5 +44,8 @@ createApp({
         getDoneLine(index){
             this.taskList[index].done = !this.taskList[index].done;
             },
+        changetask(index){
+            console.log(index)
+        }
         }
 }).mount('#app')

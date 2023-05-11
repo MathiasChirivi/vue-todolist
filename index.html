@@ -17,16 +17,16 @@
         <span v-show="inputError">Scrivere almeno 2 caratteri</span>
 
         <ul>
-            <li v-for="(task, index) in taskList" @click="getDoneLine(index)" > 
+            <li v-for="(task, index) in taskList"  > 
                 <span v-if="task.done" class="textTrue">{{task.text}}</span>
-                <span v-else="task.done">{{task.text}}</span>
+                <span v-else="task.done" class="text">{{task.text}}</span>
                 <button @click="removeToDo(index)">
                     <i class="fa-sharp fa-solid fa-xmark fa-beat" style="color: #000000;">
                     </i>
                 </button>
+                <button @click="getDoneLine(index)">Cambia stato</button>
             </li>
         </ul>
-
     </div>
     
 
